@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import { Log } from "logging_middleware";
+import { Log } from "../utils/logger.js";
 import type {
   Notification,
   CreateNotificationInput,

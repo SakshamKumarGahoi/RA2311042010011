@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { initLogger, Log } from "logging-middleware";
+import { initLogger, Log } from "./utils/logger.js";
 import App from "./App.js";
 import "./index.css";
 

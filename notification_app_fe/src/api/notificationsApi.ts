@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Log } from "logging_middleware";
+import { Log } from "../utils/logger.js";
 import type{
     Notification,
     NotificationStatus,

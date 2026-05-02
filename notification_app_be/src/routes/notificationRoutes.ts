@@ -1,22 +1,22 @@
-import {router} from '../router';
-import { Log } from 'logging_middleware';
-import { NotificationController } from '../controllers/notification_controller';
+import { Router, type Request, type Response, type NextFunction } from 'express';
+import { Log } from '../utils/logger.js';
+import { notificationController } from '../controller/notificationController.js';
 
-const router = router();
-router.use(async (req, res, next) => {
+const router = Router();
+
+router.use(async (req: Request, res: Response, next: NextFunction) => {
     await Log(
         "backend",
-        "frontend",
+        "info",
         "route",
         `${req.method} ${req.originalUrl}`
-
     );
     next();
 });
 
-router.post("/", notificationsController.create);
-router.get("/", notificationsController.list);
-router.patch("/:id/status", notificationsController.patchStatus);
-router.delete("/:id", notificationsController.remove);
+router.post("/", notificationController.create);
+router.get("/", notificationController.list);
+router.patch("/:id/status", notificationController.patchStatus);
+router.delete("/:id", notificationController.remove);
 
 export default router;

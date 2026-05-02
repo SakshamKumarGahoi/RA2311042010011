@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/api/notificationsapi.ts","./src/components/composer.tsx","./src/components/notificationcard.tsx","./src/hooks/usenotifications.ts","./src/pages/inboxpage.tsx","./src/types/notification.ts","./src/utils/logger.ts"],"version":"5.9.3"}

@@ -1,14 +1,6 @@
-export type NotificationChannel = "in_app" | "email" | "sms";
-export type NotificationStatus = "unread" | "read" | "archived";
+import { InboxPage } from "./pages/InboxPage.js";
 
-export interface Notification {
-  id: string;
-  recipientId: string;
-  senderId: string;
-  title: string;
-  body: string;
-  channel: NotificationChannel;
-  status: NotificationStatus;
-  createdAt: string;
-  readAt: string | null;
+export default function App() {
+  return <InboxPage />;
 }
+

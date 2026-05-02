@@ -1,4 +1,4 @@
-import { Log } from "logging-middleware";
+import { Log } from "../utils/logger.js";
 import { notificationRepository } from "../db/notificationRepository.js";
 import type {
   CreateNotificationInput,

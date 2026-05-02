@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Log } from "logging-middleware";
+import { Log } from "../utils/logger.js";
 import { useNotifications } from "../hooks/useNotifications.js";
 import { NotificationCard } from "../components/NotificationCard.js";
 import { Composer } from "../components/Composer.js";

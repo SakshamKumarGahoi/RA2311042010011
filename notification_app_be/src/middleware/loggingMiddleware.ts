@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from "express";
-import { Log } from "logging_middleware";
+import { Log } from "../utils/logger.js";
 export async function errorMiddleware(
   err: unknown,
   _req: Request,

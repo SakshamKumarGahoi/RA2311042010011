@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import { Log } from "logging_middleware";
-import { notificationService } from "../services/notificationService.js";
+import { Log } from "../utils/logger.js";
+import { notificationService } from "../services/notificationServices.js";
 import type { NotificationStatus } from "../types/notification.js";
 
 export const notificationController = {

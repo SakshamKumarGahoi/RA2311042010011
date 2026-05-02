@@ -1,11 +1,11 @@
 import {useState} from 'react';
-import { Log } from "logging-middleware";
+import { Log } from "../utils/logger.js";
 import { notificationsApi } from "../api/notificationsApi.js";
 import type { NotificationChannel } from "../types/notification.js";
 
 interface ComposerProps {
-    defaultSenderID: string;
-    defaultRecipientID: string;
+    defaultSenderId: string;
+    defaultRecipientId: string;
     onCreated: () => void;
 }
 

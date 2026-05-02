@@ -1,13 +1,13 @@
 import dotenv from 'dotenv';
 import cors from 'cors';
 import express from 'express';
-import {initLogger} from 'logging_middleware';
+import {initLogger, Log} from './utils/logger.js';
 
-import notificationRoutes from './routes/notificationRoutes';
+import notificationRoutes from './routes/notificationRoutes.js';
 import {
     errorMiddleware,
     requestLogger,
-} from "./middleware/loggingMiddleware";
+} from "./middleware/loggingMiddleware.js";
 
 const token = process.env.LOG_API_TOKEN;
 
