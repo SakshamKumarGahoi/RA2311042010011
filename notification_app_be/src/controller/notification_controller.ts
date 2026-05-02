@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { Log } from "logging-middleware";
+import { Log } from "logging_middleware";
 import { notificationService } from "../services/notificationService.js";
 import type { NotificationStatus } from "../types/notification.js";
 
